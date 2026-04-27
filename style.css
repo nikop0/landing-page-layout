@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
 * {
     margin: 0;
@@ -33,6 +32,7 @@ body {
 .hero-logo {
     font-size: 24px;
     color: #F9FAF8;
+    cursor: pointer;
 }
 
 .nav-left {
@@ -45,6 +45,15 @@ body {
     justify-content: flex-end;
     gap: 32px;
     align-items: center;
+}
+
+.nav-link {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
 }
 
 .hero-container {
@@ -91,6 +100,93 @@ body {
 }
 
 .sign-up-btn:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
+.info-section {
+    padding: 60px 0;
+}
+
+.info-container {
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 140px;
+}
+
+.info-img-placeholder {
+    height: 192px;
+    width: 192px;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-info {
+    flex: 0 0 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.info-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 140px 0;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-container {
+    padding: 0 200px;
+    flex-direction: column;
+}
+
+.quote-author {
+    margin-left: auto;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.cta-section {
+    padding: 120px 0;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    padding: 60px 160px;
+    color: #e5e7eb;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.cta-text h3 {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.cta-btn {
+    border: 2px solid #FFFFFF;
+}
+
+.footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: #e5e7eb;
+}
